@@ -6,7 +6,7 @@ from snake import Snake
 
 def Main():
 
-    window_size = 400
+    window_size = 800
     board_size = 40
     scale = window_size / board_size
 

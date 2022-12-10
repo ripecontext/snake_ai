@@ -55,7 +55,7 @@ class Snake:
 
             manhattan_distance_to_food = abs(new_head_pos[0] - food_pos[0]) + abs(new_head_pos[1] - food_pos[1])
             if (new_head_pos in self.body
-                    or not (0 <= self.body[-1][0] < self.board_size and 0 <= self.body[-1][1] < self.board_size)):
+                    or not (0 <= new_head_pos[0] < self.board_size and 0 <= new_head_pos[1] < self.board_size)):
                 cost[check] += 1000
 
             cost[check] += manhattan_distance_to_food
